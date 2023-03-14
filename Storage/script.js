@@ -1,7 +1,7 @@
 const person = {
     name: " Richa Mahajan",
     location: "Mumbai",   
-}
+} 
 //setItem
 localStorage.setItem("user", JSON.stringify(person))
 
