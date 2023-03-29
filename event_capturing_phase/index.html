@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grandparent, #parent, #child {
+           border: 1px solid black;
+           padding: 30px;
+}
+
+#grandparent1, #parent1, #child1 {
+           border: 1px solid red;
+           padding: 30px;
+}
+    </style>
+</head>
+<body>
+
+    <p>When we dont  pass the third argument to the addEventListener method the event is propagated from the child to the parent.</p>
+
+     <div id="grandparent"> 
+        Grand Parent- click me
+        <div id="parent">
+          Parent-click me
+          <div id="child">
+            Child -click me
+          </div>
+        </div>
+      </div>
+
+
+      <p>Setting thrid arguement to event listener to true indicates that the listener will be triggered during the capture phase and not during the bubble phase.</p>
+
+      <div id="grandparent1"> 
+        Grand Parent 1- click me
+        <div id="parent1">
+          Parent 1-click me
+          <div id="child1">
+            Child 1-click me
+          </div>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+    
+</body>
+</html>
