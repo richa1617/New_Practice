@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <p>When you click the button, the event is bubbling to the div element. The following code shows two console  when you click the button:</p>
+
+    <div id="box">
+        <button class="btn">Register</button>
+     </div>
+
+
+     <p>To prevent the click event from propagating to div element, you call the stopPropagation() method in the event handler of the button:</p>
+
+     <div id="box1">
+        <button class="btn1">Register</button>
+     </div>
+
+     <script src="script.js"></script>
+</body>
+</html>
